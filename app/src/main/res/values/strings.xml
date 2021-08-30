@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">LocalHost</string>
+    <string name="login">Login</string>
+    <string name="register">Sign Up</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="app_desc">An app allowing you to support \nyour local restaurants</string>
 </resources>

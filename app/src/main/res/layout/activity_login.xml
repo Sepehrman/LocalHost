@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:id="@+id/email_input"
+        />
+
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/pass"
+        android:id="@+id/pass_input"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/loginUser"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not a User?"
+            android:id="@+id/moveToRegister"
+            android:onClick="moveToRegister"
+            android:textColor="@color/light_blue"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
