@@ -8,4 +8,15 @@
     <string name="pass">Password</string>
     <string name="confirm_pass">Confirm Password</string>
     <string name="app_desc">An app allowing you to support \nyour local restaurants</string>
+    <string name="title_activity_main">Map</string>
+    <string name="google_maps_key">AIzaSyDh5b3LWgxN1-_vlogS7FYfX51TE8lj6Is</string>
+    <string name="viewRestaurantsList">View All Restaurants</string>
+    <string name="viewAllHosts">View All Maps Locations</string>
+    <string name="addHost">Add a New Host</string>
+    <string name="viewCafesList">View Cafes List</string>
+    <string name="submitFeedback">Submit Feedback</string>
+    <string name="hostName">Name of Location</string>
+    <string name="address">Address of Location</string>
+    <string name="automate">Automate Address</string>
+    <string name="hostType">Host Type:</string>
 </resources>

@@ -2,20 +2,19 @@ package ca.bcit.localhost;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
-
-import com.google.firebase.auth.FirebaseAuth;
+import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText emailField, passwordField, firstnameField, lastnameField;
-    Button registerBtn;
 
+    private Button popUp;
 
-    FirebaseAuth firebaseAuth;
 
 
 
@@ -23,17 +22,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
 
-//        registerBtn.findViewById(R.id.)
 
-        firebaseAuth = FirebaseAuth.getInstance();
+        Button addHostBtn = findViewById(R.id.addHostView);
 
-        if (firebaseAuth.getCurrentUser() != null) {
-            // move to the main activity
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-            finish();
-        }
 
+        addHostBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), AddHostActivity.class));
+            }
+        });
+
+
+        String[] arraySpinner = new String[] { "Restaurant", "Cafe"};
 
 
 
